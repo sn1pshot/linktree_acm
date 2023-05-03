@@ -12,7 +12,7 @@ LinkTreeRouter.get('/category/get/:linktreelinkLinktreeid',getcategory)
 LinkTreeRouter.get('/links/get/:linktreelinkLinktreeid',getalllinks)
 LinkTreeRouter.get('/linksbycat/get/:categoryname',getlinksbycategory)
 
-LinkTreeRouter.put('/put/:userId',Auth.verifyToken,updatelinktree)
+LinkTreeRouter.put('/put',Auth.verifyToken,updatelinktree)
 LinkTreeRouter.put('/category/put/:catid',Auth.verifyToken,updateCat)
 LinkTreeRouter.put('/link/put/:link_id',Auth.verifyToken,updateLink)
 
